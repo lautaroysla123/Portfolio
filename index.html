@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="whats.css">
+    <link rel="stylesheet" href="whats2.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Landing Porfolio Lautaro-ysla</title>
+</head>
+<body>
+    <div class="contenedor">
+		<header>
+			<div class="logo">
+				<h1>Lautaro Ysla</h1>
+                <p>Desarrollador Web</p>
+                <img class="imagen-perfil" src="img/lau.jpeg" alt="">
+
+			</div>
+			<form action="">
+
+				<!--En la barra de busquedas se puede buscar etiquetas (tengo pocas jaja) pero hay algunas pj(contacto, redes, estudios)-->
+				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+			</form>
+			<div class="categorias" id="categorias">
+				<a href="#" class="activo">Bienvenidos/a</a>
+				<a href="#">Acerca de mi</a>
+				<a href="#">Mis trabajos</a>
+				<a href="#">Contacto</a>
+			</div>
+		</header>
+
+		<section class="grid" id="grid">
+			<div class="item"
+				 data-categoria="contacto"
+				 data-etiquetas="llamar contacto  gmail"
+                 data-descripcion="- Lautaroysla@gmail.com">
+                 
+				<div class="item-contenido">
+					<img src="img/instagramcontact.png" alt="">
+				</div>
+			</div>
+
+			
+			<div class="item"
+				 data-categoria="contacto"
+				 data-etiquetas=" llamar contacto redes sociales instagram "
+				 data-descripcion="- Instagram- lautaro ysla"
+			>
+				<div class="item-contenido">
+					<img src="img/gmail.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="mis trabajos"
+				 data-etiquetas="trabajos proyectos estudios"
+                 data-descripcion="7.- No tengo ninguno aun.">
+				<div class="item-contenido">
+					<img src="img/mantenimiento.png" alt="">
+				</div>
+			</div>
+
+			
+
+			<div class="item"
+				 data-categoria="acerca de mi"
+				 data-etiquetas="informacion acerca de mi quien soy personal "
+                 data-descripcion=     "-Hola me llamo lautaro, tengo 21 años, resido actualmente en Argentina-Buenos aires.
+                 Soy estudiante de NUCBA Soy nuevo en esto de la programacion, me cuesta pero me encanta.." >
+				<div class="item-contenido">
+                    <img src="img/acerca de mi.png" alt="">
+                    
+				</div>
+			</div>
+		</section>
+
+		<section class="overlay" id="overlay">
+			<div class="contenedor-img">
+				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+				<img src="" alt="">
+			</div>
+			<p class="descripcion"></p>
+		</section>
+
+		<footer class="contenedor">
+			<div class="redes-sociales">
+				<div class="contenedor-icono">
+					<a href="https://www.linkedin.com/in/lautaro-ysla-30a3601b1/" target="_blank" class="linkedin">
+						<i class="fab fa-linkedin-in"></i>
+
+					</a>
+				</div>
+				<div class="contenedor-icono">
+                    <a href="https://github.com/lautaroysla123" target="_blank" class="github">
+						<i class="fab fa-github"></i>
+					</a>
+				</div>
+			</div>
+			<div class="creado-por">
+				<p> Sitio diseñado por <a href="#">Lautaro Ysla</a></p>
+			</div>
+		</footer>
+    </div>
+    <div class="nav-bottom">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+   rel="stylesheet">
+         <div class="popup-whatsapp fadeIn">
+             <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                   <i class="material-icons icon-font-color">close</i>
+				 </button> 
+				 
+               
+                <p>  <img src="img/secretary.png" width="50"> Hola, quiero saber más sobre los servicios que ofrecen </p>
+                
+             </div>
+             <div class="content-whatsapp -bottom">
+               <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+                
+                
+               
+       
+                 <button class="send-msPopup" id="send-btn" type="button">
+                     <i class="material-icons icon-font-color--black">send</i>
+                 </button>
+
+             </div>
+         </div>
+         <button type="button" id="whats-openPopup" class="whatsapp-button">
+             <div class="float" >
+<i class="fa fa-whatsapp my-float"></i></div>
+         </button>
+         <div class="circle-anime"></div>
+     </div>
+     
+
+
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
+    <script src="index.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
